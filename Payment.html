@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--css for fa fa Icons-->
+    <link rel="stylesheet" href="master.css"><!--Styles-->
+    <title>Payment</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+  </head>
+  <style media="screen">
+body{
+  /*Background Image*/
+  background-image: url("istockphoto-1203763961-612x612.jpg");
+  background-color: #8b8b8a;
+  height: 100%px; /* specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-attachment: fixed;
+  background-size: 100% 100%;
+
+  font-family: Calbri, sans-serif; /*Font size and Type*/
+  font-size: 17px;
+    padding: 8px;
+}
+  </style>
+  <body>
+    <div class="row">
+    <div class="col-75">
+      <div class="container">
+        <form action="home.html" method="POST">
+          <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Abdullah Azeem">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="abdullah@example.com">
+            <label for="pnumber"><i class="fa fa-phone" style="font-size:24px"></i> Contact Number</label>
+                        <input type="text" id="pnumber" name="phone number" placeholder="e.g 0331-XXXXXXX">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="House# , St# ,Abc Rd ">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="Islamabad">
+
+            <div class="row">
+            <div class="col-50">
+              <label for="state"><i class="fa fa-institution"></i>State</label>
+              <input type="text" id="province" name="province" placeholder="Punjab">
+            </div>
+            <div class="col-50">
+              <label for="zip"><i class="fa fa-code"></i>Zip Code</label>
+              <input type="text" id="zip" name="zip" placeholder="46000">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-50">
+                   <h3>Payment</h3>
+                   <label for="fname">Accepted Cards</label>
+                   <div class="icon-container">
+                     <i class="fa fa-cc-visa" style="color:navy;"></i>
+                     <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                      <i class="fa fa-cc-amex" style="color:blue;"></i>
+                     <i class="fa fa-cc-discover" style="color:orange;"></i>
+                   </div>
+                   <label for="namec">Name on Card</label>
+           <input type="text" id="namec" name="cardname" placeholder="Abdullah Azeem">
+           <label for="cnum">Credit Card number</label>
+           <input type="text" id="cnum" name="cardnumber" placeholder="xxxx-xxxx-xxxx-xxxx">
+           <label for="expmonth">Expiry Month</label>
+           <input type="text" id="exmonth" name="exmonth" placeholder="May">
+           <div class="row">
+             <div class="col-50">
+               <label for="exyear">Expiry Year</label>
+               <input type="text" id="exyear" name="exyear" placeholder="2022">
+             </div>
+             <div class="col-50">
+                             <label for="cvv">CVV</label>
+                             <input type="text" id="cvv" name="cvv" placeholder="xxx">
+                           </div>
+                         </div>
+                       </div>
+                     </div>
+
+      <label>
+         <input type="checkbox" checked="check" name="sameaddress"> Shipping address same as billing
+       </label>
+       <input type="submit" value="Place order" class="btn">
+     </form>
+   </div>
+ </div>
+
+ <div class="col-25">
+   <div class="container">
+     <h4><a href="Cart.html">&leftarrow;</a><span class="text-muted">Cart</span> <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+     <p><img src="alex-_AOL4_fDQ3M-unsplash.jpg" alt="" width="20%"><span class="price">$120.0</span></p>
+     <p><img src="fernando-andrade-nAOZCYcLND8-unsplash.jpg" alt="" width="20%"><span class="price">$60.0</span></p>
+     <p><img src="iphone.jpg" alt="" width="20%"><span class="price">$978.0</span></p>
+      <p><img src="rayia-soderberg-ezSFnAFi9hY-unsplash.jpg" alt="" width="20%"><span class="price">$80.0</span></p>
+     <hr>
+     <p>Total <span class="price" style="color:black"><b>$1241.00</b></span></p>
+   </div>
+ </div>
+</div>
+  </body>
+</html>
